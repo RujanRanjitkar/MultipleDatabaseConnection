@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "17984602-eeae-4199-959c-a2532d7f365a",
+		"name": "FileDetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllFileDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileDetailsId\":1,\r\n    \"filePath\":\"D:\\\\Intern Syllabus\\\\MOCK_FLIGHT_DATA1.csv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/FileDetails/getAllFileDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"FileDetails",
+						"getAllFileDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewFileDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filePath\":\"D:\\\\Intern Syllabus\\\\products\\\\product1.csv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/FileDetails/addNewFileDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"FileDetails",
+						"addNewFileDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFileDetailsById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/FileDetails/getFileDetailsById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"FileDetails",
+						"getFileDetailsById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
